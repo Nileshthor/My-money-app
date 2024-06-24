@@ -1,7 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
-export default function Requests()
+
+export default function Requests({balance, setBalance})
 {
+    const navigate = useNavigate()
+
     const requests = [
         {id:1, type:'Send',amount:100, requestBy:'Nilesh'},
         {id:2, type:'Send',amount:1000, requestBy:'Niraj'},
@@ -10,6 +14,8 @@ export default function Requests()
 
     function handleApprove(){
         alert('Request approved!')
+        setBalance(balance-100)
+        navigate('/')
     }
 
     return(

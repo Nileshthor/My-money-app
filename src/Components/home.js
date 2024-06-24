@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Home()
+export default function Home({balance, setBalance})
 {
-    const Balance = 100000
+   
     return (
         <div>
             Home 
@@ -12,7 +12,7 @@ export default function Home()
                 </div>
             </nav>
 
-            <h1>Balance: {Balance}</h1>
+            <h1>Balance: {balance}</h1>
 
             <div>
                 <a href='history'>View History</a>
