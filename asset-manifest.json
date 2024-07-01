@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/My-money-app/static/css/main.db62923b.css",
-    "main.js": "/My-money-app/static/js/main.590edaed.js",
+    "main.js": "/My-money-app/static/js/main.f2749d41.js",
     "static/js/453.14aa519b.chunk.js": "/My-money-app/static/js/453.14aa519b.chunk.js",
     "index.html": "/My-money-app/index.html",
     "main.db62923b.css.map": "/My-money-app/static/css/main.db62923b.css.map",
-    "main.590edaed.js.map": "/My-money-app/static/js/main.590edaed.js.map",
+    "main.f2749d41.js.map": "/My-money-app/static/js/main.f2749d41.js.map",
     "453.14aa519b.chunk.js.map": "/My-money-app/static/js/453.14aa519b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db62923b.css",
-    "static/js/main.590edaed.js"
+    "static/js/main.f2749d41.js"
   ]
 }
