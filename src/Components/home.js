@@ -5,7 +5,7 @@ export default function Home({balance, setBalance})
    
     return (
         <div>
-            Home 
+            My Money App Home 
             <nav className="navbar bg-body-tertiary">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="login">Navbar</a>
