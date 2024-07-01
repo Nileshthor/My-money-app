@@ -16,7 +16,7 @@ function App() {
           <Route path='/' element={<Home balance={balance} setBalance={setBalance}/>}/>
           <Route path='login' element={ <Login/>}/>
           <Route path='signin' element={<SignIn/>}/>
-          <Route path='history' element={<History/>}/>
+          {/* <Route path='history' element={<History/>}/> */}
           <Route path='requests' element={<Requests balance={balance} setBalance={setBalance}/>}/>
         </Routes>
     </div>
