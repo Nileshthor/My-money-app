@@ -1,4 +1,4 @@
-import {Route, Routes } from 'react-router-dom';
+import {BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './Components/home'
 import Requests from './Components/Requests';
@@ -12,13 +12,15 @@ function App() {
   return (
     <div className="App">
         <h1>My Money App</h1>
-        <Routes>
-          <Route path='/' element={<Home balance={balance} setBalance={setBalance}/>}/>
-          <Route path='login' element={ <Login/>}/>
-          <Route path='signin' element={<SignIn/>}/>
-          {/* <Route path='history' element={<History/>}/> */}
-          <Route path='requests' element={<Requests balance={balance} setBalance={setBalance}/>}/>
-        </Routes>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <Routes>
+            <Route path='/' element={<Home balance={balance} setBalance={setBalance}/>}/>
+            <Route path='login' element={ <Login/>}/>
+            <Route path='signin' element={<SignIn/>}/>
+            <Route path='history' element={<History/>}/>
+            <Route path='requests' element={<Requests balance={balance} setBalance={setBalance}/>}/>
+          </Routes>
+        </BrowserRouter>
     </div>
    
   );
