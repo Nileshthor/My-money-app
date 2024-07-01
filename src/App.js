@@ -12,15 +12,15 @@ function App() {
   return (
     <div className="App">
         <h1>My Money App</h1>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
-          <Routes>
+        {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
+          <Routes basename={process.env.PUBLIC_URL}>
             <Route path='/' element={<Home balance={balance} setBalance={setBalance}/>}/>
             <Route path='login' element={ <Login/>}/>
             <Route path='signin' element={<SignIn/>}/>
             <Route path='history' element={<History/>}/>
             <Route path='requests' element={<Requests balance={balance} setBalance={setBalance}/>}/>
           </Routes>
-        </BrowserRouter>
+        {/* </BrowserRouter> */}
     </div>
    
   );
